@@ -12,7 +12,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="250dp"
-        android:text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        android:text="Aplikasi pendataan mahasiswa adalah aplikasi yang dibuat untuk memenuhi syarat uts mata kuliah mobile programmin"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +37,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="450dp"
-        android:text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        android:text="Aplikasi ini dibuat oleh Muhammad Ardy Dzakwan dari kelas TI 4B dengan nim 2107411048"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
