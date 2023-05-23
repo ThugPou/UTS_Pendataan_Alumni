@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.GridView
+import android.widget.ListView
 import pnj.uts.ti.ardydzakwan.HalamanBerita
 import pnj.uts.ti.ardydzakwan.R
 import pnj.uts.ti.ardydzakwan.adapter.AdapterBerita
@@ -14,7 +15,7 @@ import pnj.uts.ti.ardydzakwan.data.DataBerita
 import java.util.ArrayList
 
 class FragmentBerita : Fragment() {
-    lateinit var gridview: GridView
+    lateinit var listView: ListView
     lateinit var adatepter: AdapterBerita
 
     override fun onCreateView(
@@ -28,12 +29,12 @@ class FragmentBerita : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        gridview = view.findViewById(R.id.gridview)
+        listView = view.findViewById(R.id.listview)
         adatepter = AdapterBerita(requireActivity(), R.layout.item_list_layout)
-        gridview.adapter = adatepter
+        listView.adapter = adatepter
         buatData()
 
-        gridview.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
+        listView.setOnItemClickListener(AdapterView.OnItemClickListener { parent, view, position, id ->
             var data  = parent.getItemAtPosition(position) as DataBerita
             (requireActivity() as HalamanBerita).pindahHalamanDetail(data)
 

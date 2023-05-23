@@ -20,12 +20,12 @@ class HalamanHome : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val log = Intent(this,LoginActivity::class.java);
-//        val tambah = Intent(this,TambahDataAlumni::class.java);
-//        val alumni = Intent(this,DataAlumni::class.java)
+        val tambah = Intent(this,TambahAlumni::class.java);
+        val alumni = Intent(this,DataAlumni::class.java)
 
         when (item.itemId){
-//            R.id.menu_tambah -> startActivity(tambah)
-//            R.id.menu_alumni -> startActivity(alumni)
+            R.id.menu_tambah -> startActivity(tambah)
+            R.id.menu_alumni -> startActivity(alumni)
             R.id.menu_logout -> startActivity(log)
         }
         return super.onOptionsItemSelected(item)
